@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class L5Q4 {
     public static void main(String[] args) {
         System.out.println("3 by 3 Matrix");

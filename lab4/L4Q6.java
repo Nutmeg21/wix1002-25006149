@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Q6
+public class L4Q6
 {
     public static void main(String[] args)
     {
