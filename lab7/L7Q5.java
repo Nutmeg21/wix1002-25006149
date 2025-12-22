@@ -4,7 +4,7 @@ import java.io.*;
 public class L7Q5 {
     public static void main(String[] args) {
         try {
-            ObjectInputStream input = new ObjectInputStream(new FileInputStream("datasets/person.dat"));
+            ObjectInputStream input = new ObjectInputStream(new FileInputStream("./lab7/datasets/person.dat"));
             while(input.available() > 0)
             {
                 int recordTotal = input.readInt();

@@ -9,11 +9,11 @@ import java.io.IOException;
 public class L7Q2 {
     public static void main(String[] args) {
         try {
-            URL u = new URL("https://github.com/Nutmeg21");
+            URL u = new URL("http://fsktm.um.edu.my");
             URLConnection cnn = u.openConnection();
             InputStream stream = cnn.getInputStream();
             Scanner in = new Scanner(stream);
-            PrintWriter output = new PrintWriter(new FileOutputStream("index.htm"));
+            PrintWriter output = new PrintWriter(new FileOutputStream("./lab7/index.htm"));
             while(in.hasNext())
             {
                 output.println(in.nextLine());

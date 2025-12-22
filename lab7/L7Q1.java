@@ -5,7 +5,7 @@ public class L7Q1 {
     public static void main(String[] args) {
         String[][] courses = {{"WXES1116", "Programming I"}, {"WXES1115", "Data Structure"}, {"WXES1110", "Operating System"}, {"WXES1112", "Computing Mathematics I"}};
         try {
-            ObjectOutputStream output = new ObjectOutputStream(new FileOutputStream("coursename.dat"));
+            ObjectOutputStream output = new ObjectOutputStream(new FileOutputStream("./lab7/coursename.dat"));
             for(int i = 0; i < courses.length; i++)
             {
                 output.writeUTF(courses[i][0]);
@@ -22,7 +22,7 @@ public class L7Q1 {
         String courseCode = sc.next().strip().toUpperCase();
         boolean found = false;
         try {
-            ObjectInputStream reader = new ObjectInputStream(new FileInputStream("coursename.dat"));
+            ObjectInputStream reader = new ObjectInputStream(new FileInputStream("./lab7/coursename.dat"));
             while(reader.available() > 0)
             {
                 String code = reader.readUTF();
@@ -37,7 +37,7 @@ public class L7Q1 {
             }
             if(!found)
             {
-                System.out.println("Courde code not found.");
+                System.out.println("Course code not found.");
             }
             sc.close();
             reader.close();

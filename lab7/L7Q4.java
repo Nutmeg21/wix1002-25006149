@@ -4,7 +4,7 @@ import java.io.*;
 public class L7Q4 {
     public static void main(String[] args) {
         try {
-            Scanner input = new Scanner(new FileInputStream("datasets/lecturer.txt"));
+            Scanner input = new Scanner(new FileInputStream("./lab7/datasets/lecturer.txt"));
             int lineCnt = 0, wordCnt = 0, charCnt = 0;
             while(input.hasNext())
             {

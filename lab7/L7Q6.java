@@ -31,7 +31,7 @@ class Product {
 public class L7Q6 {
     public static void main(String[] args) {
         try {
-            BufferedReader productInput = new BufferedReader(new FileReader("datasets/product.txt"));
+            BufferedReader productInput = new BufferedReader(new FileReader("./lab7/datasets/product.txt"));
             ArrayList<Product> products = new ArrayList<>();
             String productStr;
             while((productStr = productInput.readLine()) != null)
@@ -45,7 +45,7 @@ public class L7Q6 {
             productInput.close();
 
             System.out.println("ProductID\tProductName\t\tQuantity\tPricePerUnit\tTotal");
-            BufferedReader orderInput = new BufferedReader(new FileReader("datasets/order.txt"));
+            BufferedReader orderInput = new BufferedReader(new FileReader("./lab7/datasets/order.txt"));
             String orderStr;
             while((orderStr = orderInput.readLine()) != null)
             {
