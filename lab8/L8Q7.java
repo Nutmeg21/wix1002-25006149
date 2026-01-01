@@ -12,24 +12,22 @@ public class L8Q7 {
 
 class Money {
     double amount;
+    Scanner sc = new Scanner(System.in);
 
     public Money()
     {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Enter amount (RM) :");
         amount = sc.nextDouble();
     }
 
     public void add()
     {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Enter amount to add (RM) :");
         amount += sc.nextDouble();
     }
 
     public void substract()
     {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Enter amount to substract (RM) :");
         amount -= sc.nextDouble();
     }

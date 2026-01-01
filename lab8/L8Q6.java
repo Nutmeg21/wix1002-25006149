@@ -19,10 +19,10 @@ class Stall {
     String ID;
     int amountSold;
     static int totalSold = 0;
+    Scanner sc = new Scanner(System.in);
 
     public Stall()
     {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Enter stall ID: ");
         String stallID = sc.nextLine();
         ID = stallID;
@@ -31,7 +31,6 @@ class Stall {
 
     public void getSold()
     {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Enter amount sold by stall " + ID + ":");
         int sold = sc.nextInt();
         amountSold += sold;

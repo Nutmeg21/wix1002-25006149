@@ -28,10 +28,10 @@ public class L8Q5 {
 class Game {
     String name;
     int score;
+    Scanner sc = new Scanner(System.in);
 
     public Game()
     {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Enter player name: ");
         String playerName = sc.nextLine();
         name = playerName;

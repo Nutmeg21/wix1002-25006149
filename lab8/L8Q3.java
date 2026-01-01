@@ -10,10 +10,10 @@ public class L8Q3 {
 class WeightCalculator {
     int age;
     double height;
+    Scanner sc = new Scanner(System.in);
 
     public WeightCalculator()
     {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Enter age: ");
         int userAge = sc.nextInt();
         System.out.print("Enter height(in cm): ");

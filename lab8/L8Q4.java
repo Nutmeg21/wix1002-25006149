@@ -12,6 +12,7 @@ public class L8Q4 {
 class Fraction {
     int numerator;
     int denominator;
+    Scanner sc = new Scanner(System.in);
 
     public Fraction()
     {
@@ -21,7 +22,6 @@ class Fraction {
 
     public void set()
     {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Enter numerator: ");
         numerator = sc.nextInt();
         System.out.print("Enter denominator: ");

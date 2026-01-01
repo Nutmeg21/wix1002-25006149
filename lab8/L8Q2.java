@@ -12,10 +12,10 @@ public class L8Q2 {
 class BankAccount {
     String name;
     double currentBalance = 0;
+    Scanner sc = new Scanner(System.in);
 
     public BankAccount()
     {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Enter name / IC / Passport number: ");
         name = sc.nextLine();
         System.out.print("Enter deposit amount: ");
@@ -24,7 +24,6 @@ class BankAccount {
 
     public void deposit()
     {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Enter deposit amount: ");
         double deposit = sc.nextDouble();
         currentBalance += deposit;
@@ -33,7 +32,6 @@ class BankAccount {
 
     public void withdraw()
     {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Enter withdrawal amount: ");
         double withdraw = sc.nextDouble();
         if (currentBalance - withdraw < 0)
