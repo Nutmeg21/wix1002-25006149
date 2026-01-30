@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Q1 {
+public class Q1a {
     public static void main(String[] args) {
         int pos = 0, neg = 0, zeros = 0;
         Scanner sc = new Scanner(System.in);
